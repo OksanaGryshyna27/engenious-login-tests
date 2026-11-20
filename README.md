@@ -72,5 +72,4 @@ playwright.config.ts Chrome-only project, base URL, reports
 
 ## How AI was used
 
-<!-- Edit this section so it describes what you actually did. -->
-I used Claude as an assistant to set up the project structure and write the first version of the Page Objects and the test. I checked every locator against the live page in Chrome DevTools, ran the test locally and reviewed the code myself.
+I used Claude as an assistant to write the first version of the project structure, the Page Objects and the test. I ran the test locally and fixed the problems found during the runs: the cookie consent dialog that blocked the page, and the logged-in check, where I found the logged-in elements (Logout button and profile link) in Chrome DevTools. I also checked that the test is stable (3 runs in a row) and that it fails with a wrong password.
